@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div#wrap {
+  width: 400px;
+  height: 640px;
+  border-radius: 10px;
+  background-color: #fa0;
+}
+
+div#windowCtrl {
+  padding: 8px;
+  text-align: right;
+}
+
+header#header {
+  height: 300px;
+  text-align: center;
+  padding: 30px;
+}
+
+#header img {
+  padding-top: 40px;
+}
+
+div#login {
+  width: 240px;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 8px auto;
+  background-color: #fff;
+}
+
+div#login input {
+  width: 226px;
+  height: 36px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  margin: 2px 2px 0;
+}
+
+div#login input:first-child {
+  border-bottom: 1px solid #ccc;
+}
+
+div#login input::placeholder {
+  color: #555555;
+}
+
+div#loginBtn {
+  width: 240px;
+  height: 44px;
+  margin: 8px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+div#loginBtn button {
+  width: 240px;
+  height: 44px;
+  color: #555;
+  border: none;
+  outline: none;
+  background-color: #fff;
+}
+
+div#chkbox {
+  width: 240px;
+  height: 14px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#chkbox label {
+  color: #fff;
+  font-size: 12px;
+  position: relative;
+  top: -2px;
+}
+
+/* checkbox Custom */
+.container {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 3px;
+  top: -1px;
+  width: 4px;
+  height: 8px;
+  border: solid #555;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(50deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(30deg);
+}
+
+#chkbox img {
+  margin-left: 6px;
+  position: absolute;
+  top: 1px;
+}
+
+div#findInfo {
+  width: 240px;
+  height: 180px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#findInfo a {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 90px;
+  display: inline-block;
+}
